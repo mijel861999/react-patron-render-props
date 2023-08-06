@@ -1,8 +1,5 @@
-# React + Vite
+# Patrón de diseño: Render props
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El patrón de diseño Render Props es una técnica comúnmente utilizada en React para compartir lógica y funcionalidades entre componentes. Fue popularizado por Michael Jackson (no el cantante, sino el desarrollador web) en su blog y es una alternativa a otros patrones como el patrón de componentes de orden superior (Higher-Order Components o HOCs) y los hooks.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El concepto fundamental detrás de Render Props es que un componente **(llamado proveedor)** expone una o varias propiedades que son funciones, y estos componentes pueden ser reutilizados en otros componentes (llamados consumidores). Los consumidores utilizan esas funciones para obtener los datos o la funcionalidad que el proveedor proporciona.
